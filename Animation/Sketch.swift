@@ -29,6 +29,9 @@ class Sketch : NSObject {
         turtle.penUp()
         turtle.setPosition(to: Point(x: 250, y: 250))
         turtle.penDown()
+        
+        // Make the drawing animate more slowly
+        canvas.framesPerSecond = 5
 
     }
     
@@ -48,6 +51,7 @@ class Sketch : NSObject {
         // Move the turtle forward and turn it a bit
         turtle.forward(steps: 5)
         turtle.right(by: 1)
+//        turtle.setHeading(to: Degrees(x))
         
     }
     
